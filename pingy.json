@@ -1,0 +1,15 @@
+{
+	"name": "06",
+	"exportDir": "dist",
+	"minify": true,
+	"compile": true,
+	"autoprefix": true,
+	"exclusions": [
+		{
+			"path": "node_modules",
+			"action": "exclude",
+			"type": "dir"
+		}
+	],
+	"port": 64534
+}

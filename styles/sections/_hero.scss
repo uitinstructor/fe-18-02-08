@@ -1,0 +1,10 @@
+.hero {
+  background-color: $bg-red;
+
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  @include media(">768px") {
+    order: -1;
+  }
+}

@@ -1,0 +1,71 @@
+
+.navigaion-fixed {
+  padding-top: 113px;
+}
+
+
+
+.site-header {
+  background-color: $bg-red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $text-light;
+  border: 1px solid #000;
+
+  .navigaion-fixed & {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+
+  @include media(">320px") {
+    // background-color: $bg-yellow;
+  }
+  @include media(">768px") {
+    // background-color: $bg-green;
+  }
+  @include media(">1024px") {
+    // background-color: $bg-blue;
+  }
+
+
+
+
+}
+
+.site-nav {
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #dddddd;
+  transition: .3s;
+
+  &.site-nav--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+
+section {
+  padding-top: 150px;
+
+}
